@@ -5,6 +5,7 @@ import javax.persistence.Table;
 
 /**
  * Created by admin on 2019-01-11.
+ * chao
  */
 @Table(name = "users")
 public class User {
