@@ -22,6 +22,7 @@ public class UserController {
     @RequestMapping("list")
     public List<User> list(){
         List<User> list = userService.findAllUser();
+        System.out.println();
         return list;
     }
 }
