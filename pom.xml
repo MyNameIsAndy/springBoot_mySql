@@ -107,6 +107,11 @@
 			<scope>provided</scope>
 		</dependency>
 		<!-- 引入lombok依赖 end -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+			<version>1.1.12.RELEASE</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<!-- 配置了很多插件 -->
