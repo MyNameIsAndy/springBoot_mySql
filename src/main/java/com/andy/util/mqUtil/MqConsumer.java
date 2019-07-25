@@ -14,8 +14,10 @@ public class MqConsumer {
 
     @RabbitHandler
     @RabbitListener(queues = "test", containerFactory = "rabbitContainerFactory")
-    public QueueModel singleHandelQueueListener(String message){
+    public void singleHandelQueueListener(String message){
         QueueModel queueModel = jsonUtil.json2Object(message, QueueModel.class);
-        return queueModel;
+        System.out.println(queueModel.getQueueName());
+        System.out.println(queueModel.getDataId());
+        System.out.println(queueModel.getRemark());
     }
 }
