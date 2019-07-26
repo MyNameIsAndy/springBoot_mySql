@@ -12,7 +12,9 @@ public class MqTestController {
     private MqSendUtil mqSendUtil;
     @RequestMapping("test-mq")
     public void sendTest(){
-        mqSendUtil.send("测试");
+        for(int i=0; i<100; i++){
+            mqSendUtil.send("测试"+i);
+        }
     }
 
 }
